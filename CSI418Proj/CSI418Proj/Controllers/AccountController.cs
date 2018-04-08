@@ -445,11 +445,11 @@ namespace CSI418Proj.Controllers
 
         private ActionResult RedirectToLocal(string returnUrl)
         {
-            if (Url.IsLocalUrl(returnUrl))
+            if (!string.IsNullOrEmpty(returnUrl) || Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("StandardDash", "Dashboard");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
