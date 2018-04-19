@@ -10,7 +10,14 @@ namespace CSI418Proj.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return View("../Dashboard/StandardDash");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ActionResult About()

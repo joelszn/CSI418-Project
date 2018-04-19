@@ -9,17 +9,20 @@ namespace CSI418Proj.Controllers
     public class DashboardController : Controller
     {
         // GET: StandardDash
+        [Authorize]
         public ActionResult StandardDash()
         {
             return View();
         }
 
         // GET: AdminDash
+        [Authorize]
         public ActionResult AdminDash()
         {
             return View();
         }
 
+        [Authorize]
         public ActionResult SearchResults()
         {
             return View();
@@ -37,6 +40,8 @@ namespace CSI418Proj.Controllers
             return View();
         }
 
+        
+
         // POST: Dashboard/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -45,7 +50,7 @@ namespace CSI418Proj.Controllers
             {
                 // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
+                return RedirectToAction("StandardDash");
             }
             catch
             {

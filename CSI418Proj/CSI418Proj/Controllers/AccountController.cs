@@ -445,7 +445,7 @@ namespace CSI418Proj.Controllers
 
         private ActionResult RedirectToLocal(string returnUrl)
         {
-            if (!string.IsNullOrEmpty(returnUrl) || Url.IsLocalUrl(returnUrl))
+            if (Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
