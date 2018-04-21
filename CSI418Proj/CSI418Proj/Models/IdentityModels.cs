@@ -16,6 +16,9 @@ namespace CSI418Proj.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public string UserType { get; set; }
+
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -34,4 +37,6 @@ namespace CSI418Proj.Models
 
         public System.Data.Entity.DbSet<CSI418Proj.Models.HREntry> DashboardViewModels { get; set; }
     }
+
+
 }

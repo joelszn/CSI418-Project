@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DFC50C87-7665-4282-A1AE-C8467ED81B38}</ProjectGuid>
+    <ProjectGuid>{EB3AB211-A3D9-46B9-BAF5-26DDFDF10323}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -262,9 +262,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Dashboard\StandardDash.cshtml" />
     <Content Include="Views\Dashboard\AdminDash.cshtml" />
     <Content Include="Views\Dashboard\SearchResults.cshtml" />
+    <Content Include="Views\Dashboard\StandardDash.cshtml" />
     <Content Include="Views\HREntries\Create.cshtml" />
     <Content Include="Views\HREntries\Delete.cshtml" />
     <Content Include="Views\HREntries\Details.cshtml" />
@@ -273,7 +273,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -304,9 +303,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50027</DevelopmentServerPort>
+          <DevelopmentServerPort>49896</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50027/</IISUrl>
+          <IISUrl>http://localhost:49896/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

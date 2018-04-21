@@ -12,7 +12,6 @@ namespace CSI418Proj
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-           
-        }      
+        }
     }
 }

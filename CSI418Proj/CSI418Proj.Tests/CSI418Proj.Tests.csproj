@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{915D3552-8977-465D-B261-063FE0E883E8}</ProjectGuid>
+    <ProjectGuid>{69D1F083-66AA-48C4-90BC-2B34FF01FD16}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSI418Proj.Tests</RootNamespace>
@@ -100,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSI418Proj\CSI418Proj.csproj">
-      <Project>{DFC50C87-7665-4282-A1AE-C8467ED81B38}</Project>
+      <Project>{EB3AB211-A3D9-46B9-BAF5-26DDFDF10323}</Project>
       <Name>CSI418Proj</Name>
     </ProjectReference>
   </ItemGroup>

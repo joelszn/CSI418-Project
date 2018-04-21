@@ -101,5 +101,10 @@ namespace CSI418Proj.Controllers
                 return View();
             }
         }
+
+        //public List<> Search(string keywords)
+        //{
+           //TODO: Implement search function
+        //}
     }
 }

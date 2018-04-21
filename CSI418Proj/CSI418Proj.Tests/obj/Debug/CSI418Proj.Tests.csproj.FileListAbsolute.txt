@@ -22,8 +22,8 @@ C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.Owin.Security.dll
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Owin.dll
-C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\CSI418Proj.pdb
@@ -42,8 +42,8 @@ C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.Owin.Security.xml
-C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Nathan\Documents\ASP.NET Projects\ICSI418Y\Semester Project\CSI418Proj\CSI418Proj.Tests\obj\Debug\CSI418Proj.Tests.csprojResolveAssemblyReference.cache
