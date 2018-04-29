@@ -33,9 +33,11 @@ namespace CSI418Proj.Models
             return new ApplicationDbContext();
         }
 
+        public System.Data.Entity.DbSet<CSI418Proj.Models.FieldMapping> FieldMappings { get; set; }
+
         //public System.Data.Entity.DbSet<CSI418Proj.Models.ApplicationUser> ApplicationUsers { get; set; }
 
-        public System.Data.Entity.DbSet<CSI418Proj.Models.HREntry> DashboardViewModels { get; set; }
+
     }
 
 

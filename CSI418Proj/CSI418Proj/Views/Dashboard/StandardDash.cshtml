@@ -1,82 +1,18 @@
-﻿
-@{
-    ViewBag.Title = "StandardDash";
+﻿@{
+    ViewBag.Title = "Dashboard";
 }
 
-<style>
-    .imgborder {
-        border-radius: 25px;
-        border: 2px solid #808080;
-        padding: 5px;
-        width: auto;
-        height: auto;
-    }
-</style>
 
-<h2>StandadDash</h2>
+<h2>Dashboard</h2>
 
-<div class="row">
-    <form>
-        <div class="col-md-4">
-            <h3>Search Criteria</h3>
-            <input type="radio" name="andor" id="and" />
-            <label for="and">And</label>
-            <input type="radio" name="andor" id="or" />
-            <label for="or">Or</label>
+<div class="col-sm-4">
+    <h3>Search Criteria</h3>    
+</div>
 
-            <div>
-                <table>
-                    <tr>
-                        <td><label for="field0">Field0</label></td>
-                        <td><input class="form-control" type="search" id="field0"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field1">Field1</label></td>
-                        <td><input class="form-control" type="search" id="field1"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field2">Field2</label></td>
-                        <td><input class="form-control" type="search" id="field2"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field3">Field3</label></td>
-                        <td><input class="form-control" type="search" id="field3"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field4">Field4</label></td>
-                        <td><input class="form-control" type="search" id="field4"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field5">Field5</label></td>
-                        <td><input class="form-control" type="search" id="field5"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field6">Field6</label></td>
-                        <td><input class="form-control" type="search" id="field6"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field7">Field7</label></td>
-                        <td><input class="form-control" type="search" id="field7"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field8">Field8</label></td>
-                        <td><input class="form-control" type="search" id="field8"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="field9">Field9</label></td>
-                        <td><input class="form-control" type="search" id="field9"></td>
-                    </tr>
-                </table>
-            </div>
-            <p><a class="btn btn-default" href="SearchResults">Search</a><a class="btn btn-default" href="">Clear</a></p>
-        </div>
-    </form>
-
-
-    <div class="col-sm-4">
-        <h3>Image</h3>
-        <img class="imgborder" src="~/Content/Images/demoImage.png" alt="imageplaceholder" />
-    </div>
+<div class="col-sm-4">
+    <h3>Image</h3>
+    <img class="imgborder" src="~/Content/Images/demoImage.png" alt="imageplaceholder" />
+</div>
 
 </div>
 

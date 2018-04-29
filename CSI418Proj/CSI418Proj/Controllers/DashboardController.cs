@@ -1,6 +1,9 @@
-﻿using System;
+﻿using CSI418Proj.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -8,6 +11,9 @@ namespace CSI418Proj.Controllers
 {
     public class DashboardController : Controller
     {
+
+        ApplicationDbContext db = new ApplicationDbContext();
+
         // GET: StandardDash
         [Authorize]
         public ActionResult StandardDash()
@@ -22,11 +28,6 @@ namespace CSI418Proj.Controllers
             return View();
         }
 
-        [Authorize]
-        public ActionResult SearchResults()
-        {
-            return View();
-        }
 
         // GET: Dashboard/Details/5
         public ActionResult Details(int id)
@@ -39,8 +40,6 @@ namespace CSI418Proj.Controllers
         {
             return View();
         }
-
-        
 
         // POST: Dashboard/Create
         [HttpPost]
@@ -66,13 +65,13 @@ namespace CSI418Proj.Controllers
 
         // POST: Dashboard/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(FormCollection collection)
         {
             try
-            {
+            {                
                 // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+               
+                return RedirectToAction("AdminDash");
             }
             catch
             {

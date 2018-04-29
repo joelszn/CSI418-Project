@@ -192,14 +192,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\HREntriesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\HRDB.cs" />
-    <Compile Include="Models\HREntry.cs" />
+    <Compile Include="Models\FieldMapping.cs" />
+    <Compile Include="Controllers\FieldMappingsController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -263,13 +263,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Dashboard\AdminDash.cshtml" />
-    <Content Include="Views\Dashboard\SearchResults.cshtml" />
     <Content Include="Views\Dashboard\StandardDash.cshtml" />
-    <Content Include="Views\HREntries\Create.cshtml" />
-    <Content Include="Views\HREntries\Delete.cshtml" />
-    <Content Include="Views\HREntries\Details.cshtml" />
-    <Content Include="Views\HREntries\Edit.cshtml" />
-    <Content Include="Views\HREntries\Index.cshtml" />
+    <Content Include="Views\FieldMappings\Create.cshtml" />
+    <Content Include="Views\FieldMappings\Delete.cshtml" />
+    <Content Include="Views\FieldMappings\Details.cshtml" />
+    <Content Include="Views\FieldMappings\Edit.cshtml" />
+    <Content Include="Views\FieldMappings\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -6,111 +6,110 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using CSI418Proj.Models;
 
-namespace CSI418Proj.Controllers
+namespace CSI418Proj.Models
 {
-    public class HREntriesController : Controller
+    public class FieldMappingsController : Controller
     {
-        private HRDB db = new HRDB();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: HREntries
+        // GET: FieldMappings
         public ActionResult Index()
         {
-            return View(db.DashboardViewModels.ToList());
+            return View(db.FieldMappings.ToList());
         }
 
-        // GET: HREntries/Details/5
+        // GET: FieldMappings/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HREntry hREntry = db.DashboardViewModels.Find(id);
-            if (hREntry == null)
+            FieldMapping fieldMapping = db.FieldMappings.Find(id);
+            if (fieldMapping == null)
             {
                 return HttpNotFound();
             }
-            return View(hREntry);
+            return View(fieldMapping);
         }
 
-        // GET: HREntries/Create
+        // GET: FieldMappings/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: HREntries/Create
+        // POST: FieldMappings/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,FirstName,LastName,Department,JobTitle,HourlyPay,EmploymentStatus,Address,PhoneNumber,Email,ImagePath")] HREntry hREntry)
+        public ActionResult Create([Bind(Include = "id,FieldNum,FieldName")] FieldMapping fieldMapping)
         {
             if (ModelState.IsValid)
             {
-                db.DashboardViewModels.Add(hREntry);
+                db.FieldMappings.Add(fieldMapping);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(hREntry);
+            return View(fieldMapping);
         }
 
-        // GET: HREntries/Edit/5
+        // GET: FieldMappings/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HREntry hREntry = db.DashboardViewModels.Find(id);
-            if (hREntry == null)
+            FieldMapping fieldMapping = db.FieldMappings.Find(id);
+            if (fieldMapping == null)
             {
                 return HttpNotFound();
             }
-            return View(hREntry);
+            return View(fieldMapping);
         }
 
-        // POST: HREntries/Edit/5
+        // POST: FieldMappings/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,FirstName,LastName,Department,JobTitle,HourlyPay,EmploymentStatus,Address,PhoneNumber,Email,ImagePath")] HREntry hREntry)
+        public ActionResult Edit([Bind(Include = "id,FieldNum,FieldName")] FieldMapping fieldMapping)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(hREntry).State = EntityState.Modified;
+                db.Entry(fieldMapping).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("../Home/Index");
             }
-            return View(hREntry);
+            return View("..Home/Index");
         }
 
-        // GET: HREntries/Delete/5
+        // GET: FieldMappings/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HREntry hREntry = db.DashboardViewModels.Find(id);
-            if (hREntry == null)
+            FieldMapping fieldMapping = db.FieldMappings.Find(id);
+            if (fieldMapping == null)
             {
                 return HttpNotFound();
             }
-            return View(hREntry);
+            return View(fieldMapping);
         }
 
-        // POST: HREntries/Delete/5
+        // POST: FieldMappings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            HREntry hREntry = db.DashboardViewModels.Find(id);
-            db.DashboardViewModels.Remove(hREntry);
+            FieldMapping fieldMapping = db.FieldMappings.Find(id);
+            db.FieldMappings.Remove(fieldMapping);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
