@@ -68,9 +68,9 @@ namespace CSI418Proj.Controllers
         public ActionResult Edit(FormCollection collection)
         {
             try
-            {                
+            {
                 // TODO: Add update logic here
-               
+
                 return RedirectToAction("AdminDash");
             }
             catch
@@ -103,7 +103,7 @@ namespace CSI418Proj.Controllers
 
         //public List<> Search(string keywords)
         //{
-           //TODO: Implement search function
+        //TODO: Implement search function
         //}
     }
 }

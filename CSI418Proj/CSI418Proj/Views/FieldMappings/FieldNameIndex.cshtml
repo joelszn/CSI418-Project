@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CSI418Proj.Models.FieldMapping>
+
+@{
+    ViewBag.Title = "FieldNameIndex";
+}
+
+<table class="table">
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FieldName)
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    <button>Submit</button>
+</div>
+

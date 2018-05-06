@@ -35,6 +35,8 @@ namespace CSI418Proj.Models
 
         public System.Data.Entity.DbSet<CSI418Proj.Models.FieldMapping> FieldMappings { get; set; }
 
+        public System.Data.Entity.DbSet<CSI418Proj.Models.MappedFields> MappedFields { get; set; }
+
         //public System.Data.Entity.DbSet<CSI418Proj.Models.ApplicationUser> ApplicationUsers { get; set; }
 
 

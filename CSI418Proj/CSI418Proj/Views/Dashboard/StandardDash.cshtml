@@ -1,18 +1,24 @@
 ﻿@{
-    ViewBag.Title = "Dashboard";
+                /**/
+
+                ViewBag.Title = "Dashboard";
 }
 
 
 <h2>Dashboard</h2>
 
 <div class="col-sm-4">
-    <h3>Search Criteria</h3>    
+    <h3>Search Criteria</h3>
+    <div class="col-sm-4">
+        @{ Html.RenderAction("FieldNameIndex", "FieldMappings");}
+    </div>
+    <div class="col-sm-4">
+        @{ Html.RenderAction("Index", "MappedFields");}
+    </div>
 </div>
 
 <div class="col-sm-4">
     <h3>Image</h3>
     <img class="imgborder" src="~/Content/Images/demoImage.png" alt="imageplaceholder" />
-</div>
-
 </div>
 

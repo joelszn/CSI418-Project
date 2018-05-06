@@ -6,116 +6,111 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using CSI418Proj.Models;
 
-namespace CSI418Proj.Models
+namespace CSI418Proj.Controllers
 {
-    public class FieldMappingsController : Controller
+    public class MappedFieldsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: FieldNames
-        public ActionResult FieldNameIndex()
-        {
-            return View(db.FieldMappings.ToList());
-        }
-
-        // GET: FieldMappings
+        // GET: MappedFields
         public ActionResult Index()
         {
-            return View(db.FieldMappings.ToList());
+            return View(db.MappedFields.ToList());
         }
 
-        // GET: FieldMappings/Details/5
+        // GET: MappedFields/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FieldMapping fieldMapping = db.FieldMappings.Find(id);
-            if (fieldMapping == null)
+            MappedFields mappedFields = db.MappedFields.Find(id);
+            if (mappedFields == null)
             {
                 return HttpNotFound();
             }
-            return View(fieldMapping);
+            return View(mappedFields);
         }
 
-        // GET: FieldMappings/Create
+        // GET: MappedFields/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: FieldMappings/Create
+        // POST: MappedFields/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,FieldNum,FieldName")] FieldMapping fieldMapping)
+        public ActionResult Create([Bind(Include = "FieldID,Field1,Field2,Field3,Field4,Field5,Field6,Field7,Field8,Field9,Field10,Field11")] MappedFields mappedFields)
         {
             if (ModelState.IsValid)
             {
-                db.FieldMappings.Add(fieldMapping);
+                db.MappedFields.Add(mappedFields);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(fieldMapping);
+            return View(mappedFields);
         }
 
-        // GET: FieldMappings/Edit/5
+        // GET: MappedFields/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FieldMapping fieldMapping = db.FieldMappings.Find(id);
-            if (fieldMapping == null)
+            MappedFields mappedFields = db.MappedFields.Find(id);
+            if (mappedFields == null)
             {
                 return HttpNotFound();
             }
-            return View(fieldMapping);
+            return View(mappedFields);
         }
 
-        // POST: FieldMappings/Edit/5
+        // POST: MappedFields/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,FieldNum,FieldName")] FieldMapping fieldMapping)
+        public ActionResult Edit([Bind(Include = "FieldID,Field1,Field2,Field3,Field4,Field5,Field6,Field7,Field8,Field9,Field10,Field11")] MappedFields mappedFields)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(fieldMapping).State = EntityState.Modified;
+                db.Entry(mappedFields).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("../Home/Index");
+                return RedirectToAction("Index");
             }
-            return View("..Home/Index");
+            return View(mappedFields);
         }
 
-        // GET: FieldMappings/Delete/5
+        // GET: MappedFields/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FieldMapping fieldMapping = db.FieldMappings.Find(id);
-            if (fieldMapping == null)
+            MappedFields mappedFields = db.MappedFields.Find(id);
+            if (mappedFields == null)
             {
                 return HttpNotFound();
             }
-            return View(fieldMapping);
+            return View(mappedFields);
         }
 
-        // POST: FieldMappings/Delete/5
+        // POST: MappedFields/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            FieldMapping fieldMapping = db.FieldMappings.Find(id);
-            db.FieldMappings.Remove(fieldMapping);
+            MappedFields mappedFields = db.MappedFields.Find(id);
+            db.MappedFields.Remove(mappedFields);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

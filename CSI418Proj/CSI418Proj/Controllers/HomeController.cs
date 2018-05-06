@@ -31,8 +31,8 @@ namespace CSI418Proj.Controllers
             else
             {
                 return View();
+            }
         }
-    }
 
         public ActionResult About()
         {

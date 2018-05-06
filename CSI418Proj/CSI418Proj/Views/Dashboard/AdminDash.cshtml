@@ -16,14 +16,19 @@
 
     <div class="col-sm-4">
         <h3>Search Criteria</h3>
+        <div class="col-sm-4">
+            @{ Html.RenderAction("FieldNameIndex", "FieldMappings");}
+        </div>
+        <div class="col-sm-4">
+            @{ Html.RenderAction("Index", "MappedFields");}
+        </div>
     </div>
 
 
-    <div class="col-sm-4">
-        <h3>Image</h3>
-        <figure>
-            <img class="imgborder" src="" alt="imageplaceholder" />
-        </figure>
+        <div class="col-sm-4">
+            <h3>Image</h3>
+            <figure>
+                <img class="imgborder" src="" alt="imageplaceholder" />
+            </figure>
+        </div>
     </div>
-</div>
-
